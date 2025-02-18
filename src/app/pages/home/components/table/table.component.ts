@@ -18,7 +18,7 @@ export class TableComponent implements OnInit {
 
   ngOnInit():void{
     this.apiService.getData().subscribe(response =>{
-      // this.data = response?.data ?? [];
+      this.data = response?.data ?? [];
       console.log(response);
       this.crd.detectChanges();
     });

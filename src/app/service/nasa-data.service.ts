@@ -11,8 +11,8 @@ export class NasaDataService {
 
   constructor(private http: HttpClient) { }
 
-  getData(): Observable<{data: NasaInfo}>{
-    return this.http.get<{data: NasaInfo}>(this.apiUrl);
+  getData(): Observable<{data: NasaInfo[]}>{
+    return this.http.get<{data: NasaInfo[]}>(this.apiUrl);
   }
 
 }

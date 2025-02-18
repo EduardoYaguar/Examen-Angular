@@ -8,11 +8,20 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Andromeda Galaxy</td>
-      <td>This image is from NASA …includes our Milky Way.</td>
-      <td><button type="button" class="btn btn-info">View</button></td>
-    </tr>
+    @for (info of data; track data) {
+      <tr>
+        <th scope="row">1</th>
+        <td>{{info.title}}</td>
+        <td>{{info.description}}</td>
+        <td><button type="button" class="btn btn-info">View</button></td>
+      </tr>
+    }
+
   </tbody>
 </table>
+<!-- <tr>
+  <th scope="row">1</th>
+  <td>Andromeda Galaxy</td>
+  <td>This image is from NASA …includes our Milky Way.</td>
+  <td><button type="button" class="btn btn-info">View</button></td>
+</tr> -->
